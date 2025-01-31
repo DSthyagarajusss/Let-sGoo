@@ -388,13 +388,9 @@
             });
 
             function showImageContent(index){
-                let imageIndex = // the variable that is used to create the file name;
-            console.log("imageIndex:", imageIndex); 
-            console.log(typeof imageIndex); // Check if it's a number, string, etc.
-            const imageName = `gallery-${imageIndex}.jpg`;
-            console.log("imageName:", imageName);
+                imgModalDiv.querySelector('#img-modal img').src = `images/gallery-${index}.jpg`;
             }
-            
+
             modalCloseBtn.addEventListener('click', () => {
                 imgModalDiv.style.display = "none";
             })
