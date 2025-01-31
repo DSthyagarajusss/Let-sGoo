@@ -388,13 +388,17 @@
             });
 
             function showImageContent(index){
-                imgModalDiv.querySelector('#img-modal img').src = `images/gallery-${index}.jpg`;
+                let imageIndex = // the variable that is used to create the file name;
+            console.log("imageIndex:", imageIndex); 
+            console.log(typeof imageIndex); // Check if it's a number, string, etc.
+            const imageName = `gallery-${imageIndex}.jpg`;
+            console.log("imageName:", imageName);
             }
-
+            
             modalCloseBtn.addEventListener('click', () => {
                 imgModalDiv.style.display = "none";
             })
         </script>
-        <script async data-explicit-opt-in="true" data-cookie-opt-in="true" src="https://vercel.live/_next-live/feedback/feedback.js"></script>
+        <script async data-explicit-opt-in="true" data-cookie-opt-in="true" src="https://vercel.live/
     </body>
 </html>

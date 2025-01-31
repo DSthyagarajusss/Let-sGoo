@@ -35,3 +35,5 @@ window.addEventListener('resize', () => {
     }, 400);
 });
 document.getElementById('year').textContent = new Date().getFullYear();
+
+ 
