@@ -6,8 +6,6 @@ window.addEventListener('scroll', () => {
         navbarDiv.classList.remove('navbar-cng');
     }
 });
-
-
 const navbarCollapseDiv = document.getElementById('navbar-collapse');
 const navbarShowBtn = document.getElementById('navbar-show-btn');
 const navbarCloseBtn = document.getElementById('navbar-close-btn');
@@ -36,3 +34,4 @@ window.addEventListener('resize', () => {
         document.body.classList.remove("resize-animation-stopper");
     }, 400);
 });
+document.getElementById('year').textContent = new Date().getFullYear();
