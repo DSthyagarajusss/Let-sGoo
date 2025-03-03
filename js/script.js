@@ -1,3 +1,5 @@
+
+// showing nav buttons 
 let navbarDiv = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
     if(document.body.scrollTop > 40 || document.documentElement.scrollTop > 40){
@@ -6,6 +8,8 @@ window.addEventListener('scroll', () => {
         navbarDiv.classList.remove('navbar-cng');
     }
 });
+
+// NavBar buttons
 const navbarCollapseDiv = document.getElementById('navbar-collapse');
 const navbarShowBtn = document.getElementById('navbar-show-btn');
 const navbarCloseBtn = document.getElementById('navbar-close-btn');
@@ -18,7 +22,7 @@ navbarShowBtn.addEventListener('click', () => {
 navbarCloseBtn.addEventListener('click', () => {
     navbarCollapseDiv.classList.remove('navbar-collapse-rmw');
 });
-
+// close bar click
 document.addEventListener('click', (e) => {
     if(e.target.id != "navbar-collapse" && e.target.id != "navbar-show-btn" && e.target.parentElement.id != "navbar-show-btn"){
         navbarCollapseDiv.classList.remove('navbar-collapse-rmw');
